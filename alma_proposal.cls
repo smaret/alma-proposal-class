@@ -9,3 +9,7 @@
 \oddsidemargin=-10mm
 \evensidemargin=-10mm
 \parindent 10pt
+
+% Set the page numbering style
+\pagestyle{plain}
+\pagenumbering{arabic}
