@@ -1,6 +1,7 @@
 \LoadClass[12pt,a4paper]{article}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{alma_proposal}[2015/04/09 Unofficial class for ALMA proposals]
+\RequirePackage{titling}
 
 % Set page size
 \textheight=247mm
@@ -13,3 +14,14 @@
 % Set the page numbering style
 \pagestyle{plain}
 \pagenumbering{arabic}
+
+% Set the title style
+% FixMe: only the first author (PI) should be listed
+\setlength{\droptitle}{-60pt}
+\pretitle{\begin{center}\LARGE \bf}
+\posttitle{\end{center}}
+\preauthor{\vspace*{12pt}\begin{center}\bf PI: }
+\postauthor{\end{center}}
+\predate{}
+\postdate{}
+\date{}
