@@ -2,6 +2,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{alma_proposal}[2015/04/09 Unofficial class for ALMA proposals]
 \RequirePackage{titling}
+\RequirePackage{caption}
 
 % Set page size
 \textheight=247mm
@@ -25,3 +26,6 @@
 \predate{}
 \postdate{}
 \date{}
+
+% Format caption
+\usepackage[textfont=it]{caption}
