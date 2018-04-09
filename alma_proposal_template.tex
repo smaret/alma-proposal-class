@@ -1,8 +1,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% LaTeX template for the science justification to be       %%
-%%       submitted as part of an ALMA proposal.             %%
+%%     submitted as part of a regular ALMA proposal.        %%
+%% This template should also be used for a ToO, Solar, or   %%
+%%     mm-VLBI ALMA proposal, but NOT for Large Programs    %%
+%%     (these have a separate template with more sections)  %%
 %%                                                          %%
-%%                      ALMA Cycle 3                        %%
+%%                      ALMA Cycle 6                        %%
 %%                                                          %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -24,7 +27,6 @@
 
 % pdflatex file.tex
 
-
 % WARNINGS: 
 %           1. You must make sure that PDF output generated from this
 %              template is complete both when displayed with a viewer 
@@ -43,10 +45,16 @@
 %              in electronic form. However, the scientific content of the 
 %              images should still remain clear when displayed or printed
 %              in black and white.
+%           4. this template is for regular, ToO, Solar, or mm-VLBI ALMA proposals,
+%              but NOT for Large Programs: these have a separate template with
+%              more sections, and is available from the ALMA Science Portal
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Default format: 12pt single column %%%%%
 %% 12pt is the minimum font size allowed !! %%
+%% This applies to everything, including    %%
+%% references, figure captions, and tables  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass{alma_proposal}
@@ -59,33 +67,31 @@
 
 \begin{document}
  
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%% Title of proposal %%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\title{The most distant galaxies in the universe can be seen by ALMA}
-\author{Include here the name of the PI}
-\maketitle
-
-
-% Type a concise abstract of your proposal here (optional).
-
-\section{Abstract}
-Include here the abstract of your proposal (optional)
+%% The title, abstract and list of PIs does not need to be included in the
+%% Scientific justification, as this information is already on the cover page
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Body of science justification %%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% ENTER TEXT, FIGURES AND TABLES BELOW
+%% Minimum font size for all text, references, figure captions, and tables is 12pt !!
 
-\section{Scientific Justification}
+\section{Scientific justification}
 
-Enter the scientific justification here, together with any figures and tables that you judge necessary.
+% Please describe the scientific background of the project,
+% pertinent references and previous work relevant to this 
+% proposal, together with any figures and tables that you judge necessary
+% (use the following two examples as templates, or remove)
  
 %-----------------------------Figure Start---------------------------
+
+% The 'scale' parameter below allows you to scale the figure so that it fits within the page.
+% In this case the figure was scaled to 20% of its original size.
+% Note: for .png files one has to use pdflatex, not classic latex
+% Minumum font size for captions: 12pt 
+
 \begin{figure}[tbh]
-% The 'scale' parameter below allows you to scale the figure so that it fits within the page. In this case the figure was scaled to 20% of its original size. Note: for .png files one has to use pdflatex, not classic latex
 \includegraphics[scale=0.2]{CO_velfield.png}
 \caption{The CO(1-0) velocity field of NGC\,3256, with contours 
 of the total line emission map overlaid (ALMA Science Verification Data).}
@@ -93,6 +99,9 @@ of the total line emission map overlaid (ALMA Science Verification Data).}
 %-----------------------------Figure End------------------------------
 
 %-----------------------------Table Start-----------------------------
+
+% Minumum font size for tables: 12pt 
+
 \begin{table}[tbh]
 \begin{center}
 \caption[]{Here we show the continuum sensitivity required per band.}
@@ -108,33 +117,17 @@ Frequency (GHz) & Sensitivity (mJy) \\
 \end{table}
 %-----------------------------Table End ------------------------------
 
-You can structure the scientific justification using the two subsections below (optional).
-
-\subsection{Scientific rationale:}
-
-% Please describe the scientific background of the project,
-% pertinent references and previous work relevant to this 
-% proposal.
-
-\subsection{Immediate objective:}
+\section{Description of observations}
 
 % Please describe the observations to be made and their specific
 % purpose, with a clear explanation of the need for, and 
-% appropriateness of, ALMA Cycle 1 data.  
+% appropriateness of, ALMA Cycle 6 data.  
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Potential for Publicity %%
+%% References section:     %%
+%% Minumum font size: 12pt %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Potential for Publicity}
-
-% Here, include a brief statement on the potential of your proposal
-% to generate publicity based on the scientific results to be obtained.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%
-%% References section: %
-%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{References}
 
@@ -151,3 +144,7 @@ You can structure the scientific justification using the two subsections below (
 
 \end{document}
 
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "L"
+%%% End:
