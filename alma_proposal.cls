@@ -1,6 +1,10 @@
 \LoadClass[12pt,a4paper]{article}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{alma_proposal}[2018/04/09 Unofficial class for ALMA proposals]
+
+\newif\ifregularcap
+\DeclareOption{regularcap}{\regularcaptrue}
+\ProcessOptions\relax
 \RequirePackage{caption}
 
 % Set page size
@@ -16,4 +20,7 @@
 \pagenumbering{arabic}
 
 % Format caption
+\ifregularcap
+\else
 \usepackage[textfont=it]{caption}
+\fi

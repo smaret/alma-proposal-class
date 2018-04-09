@@ -7,7 +7,8 @@ itself. It is really simple, because the original template merely
 sets the page margin an font size.
 
 The class files tries to emulate the original template file as closely
-as possible, including the weird italic font in figure captions.
+as possible, including the weird italic font in figure captions (you
+can use the `regularcap` option to use a regular font instead).
 
 The template file `alma_proposal_template.tex` contains all
 instructions from the original ALMA template, so it is quite long. If
@@ -15,7 +16,7 @@ you want to start a proposal from scratch, it is probably better to
 start from this boilerplate:
 
 ```latex
-\documentclass{alma_proposal}
+\documentclass[regularcap]{alma_proposal}
 
 \usepackage{graphicx,natbib}
 
